@@ -1,0 +1,64 @@
+<?xml version="1.1" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site">
+    <name>Twittends</name>
+    <author>StigmaHost</author>
+    <creationDate>Octomber 2012</creationDate>
+    <copyright>Copyright (C) 2012 Xtnd.it L.T.D., All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@stigmahost.com</authorEmail>
+    <authorUrl>http://www.stigmahost.com/</authorUrl>
+    <version>1.0</version>
+    <description>Creating a list of Twitter followers in your Joomla site</description>
+    <files>
+        <filename module="mod_twittends">mod_twittends.php</filename>
+		<filename>mod_twittends.xml</filename>
+        <filename>index.html</filename>
+        <folder>css</folder>
+        <folder>js</folder>
+        <folder>img</folder>
+        <filename>language/bg-BG/bg-BG.mod_twittends.ini</filename>
+        <filename>language/cs-CZ/cs-CZ.mod_twittends.ini</filename>
+        <filename>language/da-DK/da-DK.mod_twittends.ini</filename>
+        <filename>language/el-GR/el-GR.mod_twittends.ini</filename>
+        <filename>language/en-GB/en-GB.mod_twittends.ini</filename>
+        <filename>language/fr-FR/fr-FR.mod_twittends.ini</filename>
+        <filename>language/it-IT/it-IT.mod_twittends.ini</filename>
+    </files>
+    <config>
+    	<fields name="params">
+    		<fieldset name="advanced">
+				<field name="tw_username" type="text" default="" label="MOD_TW_USERNAME" description="MOD_TW_USERNAME_DESC" />
+                <field name="tw_width" type="text" default="0" label="MOD_TW_WIDTH" description="MOD_TW_WIDTH_DESC" />
+                <field name="tw_max_users" type="text" default="20" label="MOD_TW_MAX_USERS" description="MOD_TW_MAX_USERS_DESC" />
+                <field name="tw_display" type="radio" default="0" label="MOD_TW_DISPLAY" description="MOD_TW_DISPLAY_DESC">
+					<option value="0">MOD_TW_FOLLOWERS</option>
+					<option value="1">MOD_TW_FRIENDS</option>
+				</field>
+                <field name="tw_show_username" type="radio" default="0" label="MOD_TW_SHOW_USERNAME" description="MOD_TW_SHOW_USERNAME_DESC">
+					<option value="0">MOD_TW_NO</option>
+					<option value="1">MOD_TW_YES</option>
+				</field>
+                <field name="tw_show_tweets" type="radio" default="0" label="MOD_TW_SHOW_TWEETS" description="MOD_TW_SHOW_TWEETS_DESC">
+					<option value="0">MOD_TW_NO</option>
+					<option value="1">MOD_TW_YES</option>
+				</field>
+                <field name="tw_style" type="radio" default="light" label="MOD_TW_STYLE" description="MOD_TW_STYLE_DESC">
+					<option value="light">MOD_TW_LIGHT</option>
+					<option value="dark">MOD_TW_DARK</option>
+				</field>
+			</fieldset>
+    	</fields>
+	</config>
+    <administration>
+        <languages folder="language">
+            <language tag="bg-BG">bg-BG/bg-BG.mod_twittends.ini</language>
+            <language tag="cs-CZ">cs-CZ/cs-CZ.mod_twittends.ini</language>
+            <language tag="da-DK">da-DK/da-DK.mod_twittends.ini</language>
+            <language tag="el-GR">el-GR/el-GR.mod_twittends.ini</language>
+            <language tag="en-GB">en-GB/en-GB.mod_twittends.ini</language>
+            <language tag="fr-FR">fr-FR/fr-FR.mod_twittends.ini</language>
+            <language tag="it-IT">it-IT/it-IT.mod_twittends.ini</language>
+            <language tag="zh-CN">zh-CN/zh-CN.mod_twittends.ini</language>
+        </languages>
+    </administration>
+</extension>
